@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edeb - Söz Sanatları Flash Card</title>
+    <meta name="description" content="Türk edebiyatı söz sanatları flash card uygulaması. Teşbih, istiare, mecaz, kinaye ve daha fazlasını öğren.">
+    <meta name="keywords" content="söz sanatları, edebi sanatlar, flash card, teşbih, istiare, mecaz, kinaye, türk edebiyatı, edebiyat">
+    <meta name="author" content="Cihan Yakar">
+    <meta name="theme-color" content="#403B32">
+    <meta property="og:title" content="Edeb - Söz Sanatları Flash Card">
+    <meta property="og:description" content="Türk edebiyatı söz sanatları flash card uygulaması. Kartı çevir, öğren, tekrarla.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edebiyat.bitsody.com">
+    <meta property="og:locale" content="tr_TR">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Edeb - Söz Sanatları Flash Card">
+    <meta name="twitter:description" content="Türk edebiyatı söz sanatları flash card uygulaması. Kartı çevir, öğren, tekrarla.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <main id="screen-cards" class="screen active">
+        <div class="flip-container" id="flip-container">
+            <div class="flip-card" id="flip-card">
+                <div class="flip-front glass-card">
+                    <span id="q-cat-front" class="badge">Mecaz Sanatları</span>
+                    <p class="flip-label">Hangi söz sanatı?</p>
+                    <blockquote id="card-text" class="card-quote"></blockquote>
+                    <p class="tap-hint">kartı çevir</p>
+                </div>
+                <div class="flip-back glass-card">
+                    <span id="q-cat-back" class="badge">Mecaz Sanatları</span>
+                    <p class="flip-label">Cevap</p>
+                    <h2 id="card-answer" class="card-answer"></h2>
+                    <p id="card-hint" class="card-hint"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+            <button id="btn-prev" class="btn-nav" aria-label="Önceki kart">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button id="btn-known" class="btn-known" disabled aria-label="Bildim">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                Bildim <span id="known-count" class="known-count">0</span>
+            </button>
+            <button id="btn-next-card" class="btn-nav" aria-label="Sonraki kart">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
