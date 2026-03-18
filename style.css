@@ -174,7 +174,8 @@ body {
     top: calc(100% + 8px);
     left: 0;
     right: 0;
-    min-width: 120px;
+    min-width: 227px;
+    text-wrap: pretty;
     padding: 12px 16px;
     background: var(--text);
     color: var(--bg);
